@@ -1,0 +1,124 @@
+/* font-family: 'Noto Sans',
+sans-serif;
+font-family: 'Playfair Display', serif; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*ширина элемента считается с учётом рамок и падингов*/
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /*чтобы картинка не была больше блока, в котором она лежит*/
+}
+
+
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 90px;
+    padding-bottom: 130px;
+}
+
+.section-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-header-title {
+    margin-bottom: 10px;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 42px;
+
+}
+
+.section-header p {
+    text-transform: uppercase;
+    color: #999999;
+}
+
+/* product card */
+
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    text-align: center;
+    width: 270px;
+    height: 420px;
+    margin-bottom: 40px;
+}
+
+.product-image {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.product-title {
+    margin-bottom: 12px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.product-price-wrapper {
+    font-size: 14px;
+}
+
+.old-price {
+
+    line-height: auto;
+    text-decoration-line: line-through;
+    color: #999999;
+    margin-right: 10px;
+}
+
+.new-price {
+    font-weight: 700;
+    line-height: auto;
+    color: #F72464;
+}
+
+/* кнопка */
+.section-button-wrapper {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    /*ставить всем кнопкам*/
+    height: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background: #FFFFFF;
+    border: 1px solid #F72464;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #777777;
+}
